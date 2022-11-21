@@ -1,4 +1,103 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 400px;
+    height: 500px;
+    border: solid lightgray 1px;
+    background-image: url(https://images.ctfassets.net/vfljgaefydjt/6O7he4C24Rb4PeqastyMmF/cfdfda4ccb33afe214ada871b206ccd6/festival-liberte-metisse.jpg?w=620&h=463&fm=webp&q=80);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 400px 300px;
+}
+header {
+    height: 310px;
+    transition: background-size 1s;
+}
+.container:hover {
+
+    header {
+        height: 200px;
+    }
+}
+.date {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    text-align: center;
+}
+.disque {
+    background-color: rgb(255, 79, 31);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txtdisque {
+    color:white;
+}
+.photos {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 185px;   
+}
+.rect {
+    background-color: rgb(255, 79, 31);
+    width: 100px;
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txtrect {
+    color:white; 
+    font-weight: bold;
+    text-transform : uppercase;
+}
+main {
+    margin-left: 30px;
+    margin-right: 20px;
+    flex-flow: row wrap;
+    line-height: 15px;
+}
 h1 {
-    font-family: 'Lucida Sans';
-    color: cadetblue;
+    text-transform : uppercase;
+    font-size: 40px;
+}
+h2 {
+    color: rgb(255, 79, 31);
+}
+p {
+    display: none;
+    transition: transform 1s ease-in-out;
+}
+footer {
+    color: gray;
+    margin-left: 30px;
+    margin-top: 60px;
+    display:flex;
+    justify-content: flex-start;
+}
+.timer {
+    background-image: url(timer.png);
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: left;
+}
+img {
+    margin-right: 10px;
+}
+.comments {
+    margin-left: 30px;
+    background-image: url(comments.png);
+    background-repeat: no-repeat;
 }
