@@ -17,12 +17,16 @@ body {
 }
 header {
     height: 310px;
-    transition: background-size 1s;
 }
 .container:hover {
-
     header {
         height: 200px;
+    }
+    main {
+        background-size: 400px 300px;
+    }
+    p {
+        display: flex;
     }
 }
 .date {
@@ -68,6 +72,7 @@ main {
     margin-right: 20px;
     flex-flow: row wrap;
     line-height: 15px;
+    background-size: 130px;
 }
 h1 {
     text-transform : uppercase;
@@ -86,18 +91,19 @@ footer {
     margin-top: 60px;
     display:flex;
     justify-content: flex-start;
-}
-.timer {
-    background-image: url(timer.png);
-    background-repeat: no-repeat;
-    background-size: 10px 10px;
-    background-position: left;
+    align-items: baseline;
 }
 img {
     margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.timer {
+    background-image: url(./assets/timer.png);
+    background-repeat: no-repeat;
 }
 .comments {
     margin-left: 30px;
-    background-image: url(comments.png);
+    background-image: url(./assets/comments.png);
     background-repeat: no-repeat;
 }
